@@ -1,0 +1,21 @@
+alphabet = '''2
+4
+5
+7
+8
+a
+c
+d
+e
+h
+k
+m
+n
+p
+q
+s
+u
+v
+x
+y
+z'''
