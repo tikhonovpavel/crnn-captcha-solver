@@ -19,11 +19,16 @@ They've been binarized to remove background noise:
 
 ![example3](https://raw.githubusercontent.com/tikhonovpavel/crnn-captcha-solver/master/data/train/veq4n_2949.png)
 
+Augmentations used: random small-angle rotations and piecewise affine transformation - to simulate distortions in captcha images.
 
 The model shows about 76% accuracy on the validation set.
 
-##### Augmentations used in the model: 
-Random rotations by a small angle and piecewise affine transformation - to simulate distortions in captcha images.
+##### You can download pretrained model:
+https://drive.google.com/open?id=1lNa_exTn7C2fZklHfWCyE-7eftVIkHyT
+
+To use:
+
+`python inference.py --model_path ./netCRNN_trained.pth --image_path ./image.jpg`
 
 ## Train on your own data
 - Move your data to `train` and `test` dirs. To handle the problem of images with the same texts, your files should be named as `<captcha_text>_<index>.png`, for example `veq4n_2949.png`
